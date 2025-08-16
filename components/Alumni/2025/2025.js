@@ -7,11 +7,11 @@ export default function TwentyThree() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-"/media/memberDPs/IMG-20231109-WA0023.jpg"
+
   const getData = useCallback(async () => {
     setLoading(true);
 
-    const response = await fetch(ENDPOINTS.ALUMNI + 2023);
+    const response = await fetch(ENDPOINTS.ALUMNI + 2025);
     const past = await response.json();
     setData(past);
     setLoading(false);
